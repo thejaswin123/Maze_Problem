@@ -13,3 +13,5 @@ We convert the maze to a weighted graph G(V, E) as follows: each location (i, j)
 <br>This also means that the weight for an adjacent location in the maze (e.g. d(v ij , v i,j+1 )) takes the value ∞ if the destination ( v i,j+1 ) represents a wall. Now, consider a path t 0 , t 1 , t 2 , … t k in the maze, where t i ∈ Z + x Z + is a 2D tuple indicating the location (row, col)  in the maze); this has corresponding nodes in G(V, E) (say) u 0 , u 1 , u 2 , … u k . Then,  the cost of the path t 0 , t 1 , t 2 , … t k in the maze is 
 <br>c0,0+i=0k-1d(ui, ui+1) 
 <br>where c 0,0 remains the same for all paths and may be ignored. So, the optimal path minimizes i=0k-1d(ui, ui+1) where u 0 = v n,1 and u k = v 1,m . This can be accomplished by computing the optimal path from v n,1 to v 1,m using  Djikstra’s algorithm on the graph G(V, E).
+### Output
+![image](https://user-images.githubusercontent.com/52855622/132000259-bc61d5e4-d5c1-45be-ac80-965a41a66cf6.png)
